@@ -1,0 +1,58 @@
+body {
+  display: flex; }
+
+[class*="-face"] {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap; }
+
+.pip {
+  padding: 0 9px;
+  background-color: black;
+  border-radius: 50%;
+  height: 20px; }
+
+.first-face {
+  justify-content: center; }
+  .first-face .pip {
+    align-self: center; }
+
+.second-face {
+  justify-content: space-between; }
+  .second-face .pip:nth-of-type(2) {
+    align-self: flex-end; }
+
+.third-face {
+  justify-content: space-between; }
+  .third-face .pip:nth-of-type(2) {
+    align-self: center; }
+  .third-face .pip:nth-of-type(3) {
+    align-self: flex-end; }
+
+.fourth-face {
+  justify-content: space-between; }
+  .fourth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.fifth-face {
+  justify-content: space-between; }
+  .fifth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .fifth-face .column:nth-of-type(2) {
+    justify-content: center; }
+
+.sixth-face {
+  justify-content: space-between; }
+  .sixth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+/*# sourceMappingURL=application.css.map */
